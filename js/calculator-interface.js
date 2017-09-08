@@ -39,11 +39,8 @@ e.preventDefault();
     $('#jupiterAge').text("Your age: " + jupiterAge);
     $('#jupiterYearsLeft').text("Years left: " + jupiterYearsLeft);
 
-    alert(dateOfBirth);
-
     $('#age-in-seconds').text(calculator.getEarthAgeInSeconds(dateOfBirth));
 
-    alert(calculator.getEarthAgeInSeconds(dateOfBirth));
     $('#result').show();
   });
 });

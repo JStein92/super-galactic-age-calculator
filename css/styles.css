@@ -12,6 +12,9 @@ body {
 .jumbotron{
   background-color: (1,1,1,.2)
 }
+.jumbotron h1{
+  letter-spacing: 10px;
+}
 
 label{
   color: white;
