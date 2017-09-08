@@ -1,4 +1,4 @@
-# Super Galactice Age Calculator
+# Super Galactic Age Calculator
 
 #### Javascript Week 1 Project
 
@@ -20,3 +20,27 @@ _An application that determines a user’s age based on a planet’s solar years
 | Return the age of a human in Mars years | April 30th 1992 | 13.4 |
 | Return the age of a human in Jupiter years | April 30th 1992 | 2.13 |
 | Determine how many years a user has left to live on each planet | Relevant Questions |Probable Age Output |
+
+### _Content_ ###
+
+Index.html:
+- Splash page that has form, and planets showing ages/years left
+
+Other:
+- styles.css
+  - styling page
+- calculator.js
+  - Calculator class and methods
+- calculator-interface.js
+  - front end integration for calculator
+- calculator-spec.js
+  - testing for calculator
+
+
+### _How to use_ ###
+
+1. Download project from GitHub: https://github.com/JStein92/super-galactic-age-calculator
+2. Run HTML in preferred browser
+3. Follow instructions on page
+  - Fill out form
+  - See text on planets
