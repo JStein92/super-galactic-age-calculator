@@ -8,15 +8,27 @@ export class Calculator{
     return diffInYears;
   }
 
-  convertYearsToSeconds(years){
-    return 31557600 * years;
+  getCurrentMoment(){
+    const now = moment();
+    return now;
+  }
+
+  getEarthAgeInSeconds(startDate){
+    let startMoment = moment([startDate]);
+    let diffInSeconds = moment().diff(startMoment, 'seconds');
+
+    return diffInSeconds;
+  }
+
+  convertDaysToSeconds(days) {
+    return 86400 * days;
   }
 
   findDifferenceBetweenDates(date1,date2) {
     const moment1 = moment([date1]);
     const moment2 = moment([date2]);
 
-    const diffInDays =  moment2.diff(moment1, 'days');
+    let diffInDays =  moment2.diff(moment1, 'days');
     const secondsInADay = 86400;
     return diffInDays * secondsInADay;
   }
@@ -49,8 +61,8 @@ export class Calculator{
     return Math.round(diffInYears / yearDividend);
   }
 
-  determineYearsLeft(age, sex, lifeStyle, smokeCigarettes, continent) {
-    let lifeExpectancy = 71.5; //world avg from wikipedia
+  determineYearsLeft(age, sex, lifeStyle, smokeCigarettes, continent, planetYearMultiplier) {
+    let lifeExpectancy = 71.5 * planetYearMultiplier; //world avg from wikipedia
 
     if (sex === "male") {
       lifeExpectancy *= 0.95;
@@ -72,18 +84,18 @@ export class Calculator{
       lifeExpectancy *= 1.02;
     }
 
-    if (continent === "north-america") {
+    if (continent === "North America") {
       lifeExpectancy *= 1.05;
-    } else if (continent === "europe") {
+    } else if (continent === "Europe") {
         lifeExpectancy *= 1.04;
     } else if (continent === "Oceania") {
         lifeExpectancy *= 1.03;
-    } else if (continent === "latin-america-carribean") {
+    } else if (continent === "Latin America") {
         lifeExpectancy *= 1.02;
-    } else if (continent === "asia") {
+    } else if (continent === "Asia") {
         lifeExpectancy *= 1.01;
-    } else if (continent === "africa") {
-        lifeExpectancy *= .88;
+    } else if (continent === "Africa") {
+        lifeExpectancy *= 0.88;
     }
 
     return Math.round(lifeExpectancy - age);

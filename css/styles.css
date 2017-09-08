@@ -3,6 +3,12 @@ body {
   font-family: 'Encode Sans Condensed', sans-serif;
 }
 
+#result{
+  color: white;
+  margin-bottom: 1500px;
+  display: none;
+}
+
 .jumbotron{
   background-color: (1,1,1,.2)
 }
@@ -19,7 +25,7 @@ label{
     height: 300px;
     width: 300px;
 
-    top: 100%;
+    top: 110%;
     left: 50%;
     margin-left: -150px;
     margin-top: -50px;
@@ -38,7 +44,7 @@ label{
     position: absolute;
     height: 300px;
     width: 300px;
-    top: 100%;
+    top: 110%;
     left: 50%;
 
     margin-left: -150px;
@@ -65,11 +71,11 @@ label{
     position: absolute;
     height: 450px;
     width: 450px;
-    top: 100%;
+    top: 110%;
     left: 50%;
 
-    margin-left: -200px;
-    margin-top: -100px;
+    margin-left: -230px;
+    margin-top: -120px;
 
     animation: spin-right 30s linear infinite;
     animation-delay: 0s;
@@ -84,8 +90,6 @@ label{
 
 }
 
-
-
 .earth {
     height: 50px;
     width: 50px;
@@ -98,7 +102,7 @@ label{
     position: absolute;
     height: 650px;
     width: 650px;
-    top: 100%;
+    top: 110%;
     left: 50%;
 
     margin-left: -330px;
@@ -127,7 +131,7 @@ label{
     position: absolute;
     height: 850px;
     width: 850px;
-    top: 100%;
+    top: 110%;
     left: 50%;
 
     margin-left: -420px;
@@ -159,7 +163,7 @@ label{
     position: absolute;
     height:1080px;
     width:1080px;
-    top: 100%;
+    top: 110%;
     left: 50%;
 
     margin-left: -500px;

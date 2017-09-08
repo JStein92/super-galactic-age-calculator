@@ -17,21 +17,57 @@
       <h1>Super Galactice Age Calculator</h1>
     </div>
 
-    <form class="form-group">
+    <form class="form-group" id="form">
       <label for="Date of Birth">Enter Date of Birth</label>
-      <input type="date" name="" value="" class="form-control">
+      <input type="date"  class="form-control" id="date-of-birth" required max="2016-12-31">
+
+      <label for="sex">Sex</label>
+      <select class="form-control" required id="sex">
+        <option>male</option>
+        <option>female</option>
+      </select>
+
+      <label for="sex">Active lifeStyle?</label>
+      <select class="form-control" required id="lifestyle">
+        <option>inactive</option>
+        <option>moderate</option>
+        <option>active</option>
+      </select>
+
+      <label for="sex">Smoke ciggarettes?</label>
+      <select class="form-control" required id="smoke">
+        <option>true</option>
+        <option>false</option>
+      </select>
+
+      <label for="sex">Where do you live?</label>
+      <select class="form-control" required id="location">
+        <option>North America</option>
+        <option>Europe</option>
+        <option>Oceania</option>
+        <option>Latin America</option>
+        <option>Asia</option>
+        <option>Africa</option>
+      </select>
+
+
       <button type="submit" name="button" class="btn">Submit</button>
     </form>
 
-    <img class="sun" src="http://www.freepngimg.com/download/sun/5-2-sun-png-hd.png"></div>
+    <div id="result">
+      <h3>You are <span id="age-in-seconds"></span> seconds old</h3>
+    </div>
+
+      <img class="sun" src="http://www.freepngimg.com/download/sun/5-2-sun-png-hd.png"></div>
+
 
     <div class="mercury-orbit">
 
-        <div id="content-mercury">
-          <div class="content">
-            <h4>Mercury</h4>
-            <p id="mercuryAge">Your age: 25</p>
-            <p id="mercuryYearsLeft">Years left: 43</p>
+      <div id="content-mercury">
+        <div class="content">
+          <h4>Mercury</h4>
+          <p id="mercuryAge"> </p>
+          <p id="mercuryYearsLeft"></p>
         </div>
       </div>
 
@@ -43,10 +79,10 @@
       <div id="content-venus">
         <div class="content">
           <h4>Venus</h4>
-          <p id="venusAge">Your age: 25</p>
-          <p id="venusYearsLeft">Years left: 43</p>
+          <p id="venusAge"></p>
+          <p id="venusYearsLeft"></p>
+        </div>
       </div>
-    </div>
 
       <img class="venus" src="http://endeavour.pegasusfleet.net/images/ClassN22.png" />
     </div>
@@ -56,10 +92,10 @@
       <div id="content-earth">
         <div class="content">
           <h4>Earth</h4>
-          <p id="earthAge">Your age: 25</p>
-          <p id="earthYearsLeft">Years left: 43</p>
+          <p id="earthAge"></p>
+          <p id="earthYearsLeft"></p>
+        </div>
       </div>
-    </div>
 
       <img class="earth" src="http://www.pngall.com/wp-content/uploads/2016/06/Earth-Free-Download-PNG.png" />
     </div>
@@ -69,10 +105,10 @@
       <div id="content-mars">
         <div class="content">
           <h4>Mars</h4>
-          <p id="marsAge">Your age: 25</p>
-          <p id="marsYearsLeft">Years left: 43</p>
+          <p id="marsAge"></p>
+          <p id="marsYearsLeft"></p>
+        </div>
       </div>
-    </div>
 
       <img class="mars" src="https://vignette3.wikia.nocookie.net/vsbattles/images/e/e9/Mars_Planet.png/revision/latest?cb=20151113063011" />
     </div>
@@ -82,10 +118,10 @@
       <div id="content-jupiter">
         <div class="content">
           <h4>Jupiter</h4>
-          <p id="jupiterAge">Your age: 25</p>
-          <p id="jupiterYearsLeft">Years left: 43</p>
+          <p id="jupiterAge"></p>
+          <p id="jupiterYearsLeft"></p>
+        </div>
       </div>
-    </div>
 
       <img class="jupiter" src="https://i.pinimg.com/originals/18/07/67/180767e2e3b71d83b55f6f862b8a6551.png" />
     </div>
