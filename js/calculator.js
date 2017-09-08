@@ -18,7 +18,15 @@ export class Calculator{
     const startMoment = moment([startDate]);
     const diffInYears = moment().diff(startMoment,'years');
     const mercuryRevolutionDays = 87.97;
-    const yearDividend = 365/mercuryRevolutionDays;
-    return Math.floor(diffInYears / yearDividend);
+    const yearDividend = mercuryRevolutionDays/365;
+    return Math.round(diffInYears / yearDividend);
+  }
+
+  findAgeInVenusYears(startDate) {
+    const startMoment = moment([startDate]);
+    const diffInYears = moment().diff(startMoment,'years');
+    const venusRevolutionDays = 224.7;
+    const yearDividend = venusRevolutionDays/365;
+    return Math.round(diffInYears / yearDividend);
   }
 }
