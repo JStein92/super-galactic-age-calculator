@@ -13,6 +13,10 @@ export class Calculator{
     return now;
   }
 
+  convertYearsToSeconds(years){
+    return years * 31557600;
+  }
+
   getEarthAgeInSeconds(startDate){
     let startMoment = moment([startDate]);
     let diffInSeconds = moment().diff(startMoment, 'seconds');

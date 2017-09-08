@@ -44,9 +44,9 @@ describe('Calculator', function(){
   });
 
   it ('should determine avg years left', function(){
-    const yearsLeft = calculator.determineYearsLeft(25, "male", "moderate", "false", "north-america");
+    const yearsLeft = calculator.determineYearsLeft(25, "male", "moderate", "false", "north-america", 1);
 
-    expect(yearsLeft).toEqual(48);
+    expect(yearsLeft).toEqual(44);
   });
 
 });
