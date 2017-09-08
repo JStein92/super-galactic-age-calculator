@@ -17,7 +17,14 @@ describe('Calculator', function(){
 
     const secondsDiff = calculator.findDifferenceBetweenDates("1992-04-30", "2017-08-08");
 
-    expect(secondsDiff).toEqual(788940000);
+    expect(secondsDiff).toEqual(789004800);
+  });
+
+  it ('should find age in years on mercury',function(){
+
+    const ageInMercuryYears = calculator.findAgeInMercuryYears("1992-04-30");
+
+    expect(ageInMercuryYears).toEqual(6);
   });
 
 });

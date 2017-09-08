@@ -9,8 +9,16 @@ export class Calculator{
     const moment1 = moment([date1]);
     const moment2 = moment([date2]);
 
-    const diffInYears =  moment2.diff(moment1, 'years')
-    const secondsInAYear = 31557600;
-    return diffInYears * secondsInAYear;
+    const diffInDays =  moment2.diff(moment1, 'days')
+    const secondsInADay = 86400;
+    return diffInDays * secondsInADay;
+  }
+
+  findAgeInMercuryYears(startDate) {
+    const startMoment = moment([startDate]);
+    const diffInYears = moment().diff(startMoment,'years');
+    const mercuryRevolutionDays = 87.97;
+    const yearDividend = 365/mercuryRevolutionDays;
+    return Math.floor(diffInYears / yearDividend);
   }
 }
