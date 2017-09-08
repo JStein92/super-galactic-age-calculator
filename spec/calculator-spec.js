@@ -43,4 +43,10 @@ describe('Calculator', function(){
     expect(ageInJupiterYears).toEqual(2);
   });
 
+  it ('should determine avg years left', function(){
+    const yearsLeft = calculator.determineYearsLeft(25, "male", "moderate", "false", "north-america");
+
+    expect(yearsLeft).toEqual(48);
+  });
+
 });
