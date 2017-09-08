@@ -44,3 +44,8 @@ Other:
 3. Follow instructions on page
   - Fill out form
   - See text on planets
+
+  ## Future functionality desired
+
+  - Ability to click on planets to get more info about them
+  - More detailed quiz
