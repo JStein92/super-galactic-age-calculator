@@ -37,4 +37,12 @@ export class Calculator{
     const yearDividend = marsRevolutionDays/365;
     return Math.round(diffInYears / yearDividend);
   }
+
+  findAgeInJupiterYears(startDate) {
+    const startMoment = moment([startDate]);
+    const diffInYears = moment().diff(startMoment,'years');
+    const jupiterRevolutionDays = 4329.63;
+    const yearDividend = jupiterRevolutionDays/365;
+    return Math.round(diffInYears / yearDividend);
+  }
 }

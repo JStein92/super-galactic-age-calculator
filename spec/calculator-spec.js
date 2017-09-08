@@ -37,4 +37,10 @@ describe('Calculator', function(){
     expect(ageInMarsYears).toEqual(13);
   });
 
+  it ('should find age in years on jupiter',function(){
+    const ageInJupiterYears = calculator.findAgeInJupiterYears("1992-04-30");
+
+    expect(ageInJupiterYears).toEqual(2);
+  });
+
 });
