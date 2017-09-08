@@ -31,4 +31,10 @@ describe('Calculator', function(){
     expect(ageInVenusYears).toEqual(41);
   });
 
+  it ('should find age in years on mars',function(){
+    const ageInMarsYears = calculator.findAgeInMarsYears("1992-04-30");
+
+    expect(ageInMarsYears).toEqual(13);
+  });
+
 });

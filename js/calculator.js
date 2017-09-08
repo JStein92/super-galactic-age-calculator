@@ -29,4 +29,12 @@ export class Calculator{
     const yearDividend = venusRevolutionDays/365;
     return Math.round(diffInYears / yearDividend);
   }
+
+  findAgeInMarsYears(startDate) {
+    const startMoment = moment([startDate]);
+    const diffInYears = moment().diff(startMoment,'years');
+    const marsRevolutionDays = 686.2;
+    const yearDividend = marsRevolutionDays/365;
+    return Math.round(diffInYears / yearDividend);
+  }
 }
